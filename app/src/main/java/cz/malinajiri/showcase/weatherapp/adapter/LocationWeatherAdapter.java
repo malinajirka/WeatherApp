@@ -59,7 +59,7 @@ public class LocationWeatherAdapter extends ArrayAdapter<LocationWeatherDatabase
         }
         holder.mTitle.setText(item.getCity());
 
-        holder.mSubtitle.setText(item.getCity());
+        holder.mSubtitle.setText(item.getWeather());
 
         holder.mTemperature.setText(item.getFormattedTemp());
 
