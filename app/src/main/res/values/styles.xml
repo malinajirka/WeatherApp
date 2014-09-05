@@ -19,6 +19,7 @@
     <style name="WeatherApp"></style>
 
     <style name="WeatherApp.Drawer"></style>
+
     <style name="WeatherApp.TextView.Semibold.DrawerItem">
         <item name="android:textSize">@dimen/drawer_text_size</item>
         <item name="android:textColor">@drawable/selector_drawer_textview</item>
@@ -58,9 +59,6 @@
     <style name="WeatherApp.TextView.Light">
         <item name="fontName">proximanova_light.ttf</item>
     </style>
-
-
-
 
 
     <style name="WeatherApp.TextView.Regular.LocationSubtitle">
@@ -176,9 +174,12 @@
         <item name="android:divider">@drawable/inset_divider_default_list</item>
     </style>
 
-
-
-
+    <style name="WeatherApp.EmptyProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:id">@android:id/empty</item>
+    </style>
 
 
 </resources>
