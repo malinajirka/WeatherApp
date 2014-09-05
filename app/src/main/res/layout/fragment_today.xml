@@ -33,7 +33,8 @@
                 android:layout_height="@dimen/fragment_today_weather_img_dimen"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/fragment_today_default_margin_top"
-                android:src="@drawable/ic_sun"/>
+                android:src="@drawable/ic_sun"
+                />
 
 
             <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView

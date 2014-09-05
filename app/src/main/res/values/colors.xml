@@ -6,6 +6,9 @@
     <color name="global_divider_default_list">#EAEAEA</color>
     <color name="global_default_list_temperature">#2f91ff</color>
 
+    <!--LIST DIALOG-->
+    <color name="list_dialog_title_blue">#3D90D8</color>
+
     <!--DRAWER-->
     <color name="drawer_divider">#D8D8D8</color>
 

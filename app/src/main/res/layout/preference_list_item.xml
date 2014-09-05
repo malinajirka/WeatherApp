@@ -6,7 +6,9 @@
                 android:paddingRight="@dimen/global_horizontal_margin"
                 android:paddingTop="@dimen/global_vertical_margin"
                 android:paddingBottom="@dimen/global_vertical_margin"
-                android:layout_height="@dimen/preference_item_height"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/preference_item_height"
+
                 >
 
     <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView

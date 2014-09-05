@@ -12,9 +12,7 @@
         <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
             android:id="@+id/title"
             android:text="TITLE"
-            android:layout_centerVertical="true"
             style="@style/WeatherApp.TextView.Semibold.PreferenceTitle"
-
             />
 
 

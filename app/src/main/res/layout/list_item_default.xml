@@ -5,7 +5,6 @@
                 android:gravity="center_vertical"
                 android:paddingBottom="@dimen/global_vertical_margin"
                 android:paddingLeft="@dimen/global_horizontal_margin"
-
                 android:paddingRight="@dimen/global_horizontal_margin"
                 android:paddingTop="@dimen/global_vertical_margin">
 
@@ -19,7 +18,6 @@
     <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
         android:id="@+id/title"
         style="@style/WeatherApp.TextView.Semibold.LocationTitle"
-        android:layout_marginLeft="@dimen/default_list_content_left_margin"
         />
 
     <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
@@ -33,8 +31,7 @@
     <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
         android:id="@+id/temperature"
         style="@style/WeatherApp.TextView.Light.LocationTemperature"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="@dimen/global_widget_horizontal_margin"
+
         />
 
 </RelativeLayout>

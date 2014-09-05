@@ -10,7 +10,6 @@
     </style>
 
 
-
     <!-- ActionBar styles -->
     <style name="WeatherApp.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
         <item name="android:background">@drawable/ab_background</item>
@@ -18,6 +17,29 @@
 
 
     <style name="WeatherApp"></style>
+
+    <style name="WeatherApp.Drawer"></style>
+    <style name="WeatherApp.TextView.Semibold.DrawerItem">
+        <item name="android:textSize">@dimen/drawer_text_size</item>
+        <item name="android:textColor">@drawable/selector_drawer_textview</item>
+        <item name="android:paddingLeft">@dimen/global_widget_horizontal_margin</item>
+    </style>
+
+    <style name="WeatherApp.Drawer.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@color/drawer_divider</item>
+        <item name="android:dividerHeight">@dimen/drawer_list_divider_height</item>
+        <item name="android:background">@android:color/white</item>
+
+    </style>
+
+    <style name="WeatherApp.TextView.Semibold.LocationTitle">
+        <item name="android:textSize">@dimen/default_list_title_size</item>
+        <item name="android:layout_marginLeft">@dimen/default_list_content_left_margin</item>
+    </style>
+
 
     <style name="WeatherApp.TextView" parent="@android:style/Widget.TextView">
         <item name="android:layout_width">wrap_content</item>
@@ -38,14 +60,7 @@
     </style>
 
 
-    <style name="WeatherApp.TextView.Semibold.DrawerItem">
-        <item name="android:textSize">@dimen/drawer_text_size</item>
-        <item name="android:textColor">@drawable/selector_drawer_textview</item>
-    </style>
 
-    <style name="WeatherApp.TextView.Semibold.LocationTitle">
-        <item name="android:textSize">@dimen/default_list_title_size</item>
-    </style>
 
 
     <style name="WeatherApp.TextView.Regular.LocationSubtitle">
@@ -55,6 +70,9 @@
     <style name="WeatherApp.TextView.Light.LocationTemperature">
         <item name="android:textSize">@dimen/default_list_temperature_size</item>
         <item name="android:textColor">@color/global_default_list_temperature</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">@dimen/global_widget_horizontal_margin</item>
+
     </style>
 
     <style name="WeatherApp.TextView.Semibold.TodayCityAndCountry">
@@ -78,7 +96,8 @@
         <item name="android:textColor">@color/global_default_text_color</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:drawablePadding">@dimen/fragment_today_information_drawable_padding</item>
+        <item name="android:drawablePadding">@dimen/fragment_today_information_drawable_padding
+        </item>
         <item name="android:gravity">center</item>
     </style>
 
@@ -131,9 +150,35 @@
         <item name="android:paddingRight">@dimen/global_horizontal_margin</item>
         <item name="android:paddingTop">@dimen/global_vertical_margin</item>
         <item name="android:paddingBottom">@dimen/global_vertical_margin</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/list_dialog_title_height</item>
+    </style>
+
+    <style name="WeatherApp.Drawer.ItemContainer">
+
+        <item name="android:paddingLeft">@dimen/global_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/global_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/global_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/global_vertical_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:height">@dimen/drawer_list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="WeatherApp.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:divider">@drawable/inset_divider_default_list</item>
     </style>
 
 
-    <color name="list_dialog_title_blue">#3D90D8</color>
-    <dimen name="list_dialog_title">18sp</dimen>
+
+
+
+
 </resources>
