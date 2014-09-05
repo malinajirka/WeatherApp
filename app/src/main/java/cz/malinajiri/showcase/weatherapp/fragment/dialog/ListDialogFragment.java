@@ -21,9 +21,7 @@ import java.util.Map;
 
 import cz.malinajiri.showcase.weatherapp.R;
 import cz.malinajiri.showcase.weatherapp.WeatherAppApplication;
-import cz.malinajiri.showcase.weatherapp.adapter.SimpleListDialogAdapter;
 import cz.malinajiri.showcase.weatherapp.listener.OnListDialogItemClickedListener;
-import cz.malinajiri.showcase.weatherapp.utility.TypefaceUtils;
 
 public class ListDialogFragment extends DialogFragment {
 
@@ -89,6 +87,7 @@ public class ListDialogFragment extends DialogFragment {
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 
+
 		Bundle args = getArguments();
 		if (args == null) {
 			return null;
@@ -108,7 +107,7 @@ public class ListDialogFragment extends DialogFragment {
 
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-		builder.setTitle(title).setAdapter(new SimpleListDialogAdapter(getActivity(),fillMaps,
+		builder.setAdapter(new SimpleListDialogAdapter(getActivity(),fillMaps,
                 R.layout.list_dialog_layout,new String[] {SimpleListDialogAdapter.MAP_KEY},to),
                 new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -117,6 +116,13 @@ public class ListDialogFragment extends DialogFragment {
 
             }
         });
+
+
+        TextView dialogTitle = (TextView) LayoutInflater.from(getActivity()).inflate(R.layout.list_dialog_custom_title,null);
+        dialogTitle.setText(title);
+
+        builder.setCustomTitle(dialogTitle);
+
 		return builder.create();
 	}
 

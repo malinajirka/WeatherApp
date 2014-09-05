@@ -9,12 +9,13 @@
                 android:layout_height="@dimen/preference_item_height"
     >
 
-    <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
-        android:id="@+id/title"
-        android:text="TITLE"
-        style="@style/WeatherApp.TextView.Semibold.PreferenceTitle"
+        <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+            android:id="@+id/title"
+            android:text="TITLE"
+            android:layout_centerVertical="true"
+            style="@style/WeatherApp.TextView.Semibold.PreferenceTitle"
 
-        />
+            />
 
 
 

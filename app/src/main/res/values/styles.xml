@@ -124,5 +124,16 @@
         <item name="android:textSize">@dimen/preference_text_size</item>
     </style>
 
+    <style name="WeatherApp.TextView.Semibold.DialogTitle">
+        <item name="android:textColor">@color/list_dialog_title_blue</item>
+        <item name="android:textSize">@dimen/list_dialog_title</item>
+        <item name="android:paddingLeft">@dimen/global_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/global_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/global_vertical_margin</item>
+        <item name="android:paddingBottom">@dimen/global_vertical_margin</item>
+    </style>
 
+
+    <color name="list_dialog_title_blue">#3D90D8</color>
+    <dimen name="list_dialog_title">18sp</dimen>
 </resources>
