@@ -17,7 +17,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
@@ -28,7 +28,7 @@ android {
     buildToolsVersion '19.1.0'
     defaultConfig {
         minSdkVersion 6
-        targetSdkVersion 19
+        targetSdkVersion 20
     }
     sourceSets {
         main {
