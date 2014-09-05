@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL-->
+    <color name="global_default_text_color">#333333</color>
+    <color name="global_highlighted_text_color">#2F91FF</color>
+    <color name="global_divider_default_list">#EAEAEA</color>
+    <color name="global_default_list_temperature">#2f91ff</color>
+
+    <!--DRAWER-->
+    <color name="drawer_divider">#D8D8D8</color>
+
+    <!--FRAGMENT TODAY-->
+    <color name="fragment_today_temperature_text">#2f91ff</color>
+    <color name="fragment_today_transparent_button_pressed">#f6f6f6</color>
+    <color name="fragment_today_share_orange">#FF8847</color>
+
+    <!--FRAGMENT SETTINGS-->
+    <color name="fragment_divider_settings">#E0E0E0</color>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="max_location_age_in_millis">1800000</string>
+    <string name="location_update_interval_in_millis">5000</string>
+    <string name="required_accuracy_in_meters">2000</string>
+    <string name="min_location_distance">2000</string>
+
+    <string name="url_base">http://api.openweathermap.org/data/2.5</string>
+
+    <string name="url_singl_weather_by_id">/weather?id=%1$d</string>
+    <string name="url_single_weather_by_location">/weather?lat=%1$f&amp;lon=%2$f</string>
+    <string name="url_multiple_weather_by_id">/group?id=%1$s</string>
+    <string name="url_forecast_by_location">/forecast/daily?lat=%1$f&amp;lon=%2$f&amp;cnt=7</string>
+
+</resources>

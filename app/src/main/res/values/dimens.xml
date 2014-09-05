@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--GLOBAL-->
+    <!-- different for various screen sizes -->
+    <dimen name="global_horizontal_margin">16dp</dimen>
+    <dimen name="global_vertical_margin">16dp</dimen>
+    <dimen name="global_widget_horizontal_margin">16dp</dimen>
+    <dimen name="global_default_button_padding">8dp</dimen>
+
+    <!--ACTION BAR-->
+    <dimen name="ab_title_text_size">18sp</dimen>
+
+
+    <!--DRAWER-->
+    <dimen name="drawer_list_item_height">93dp</dimen>
+    <dimen name="drawer_text_size">22sp</dimen>
+    <dimen name="drawer_width">240dp</dimen>
+    <dimen name="drawer_list_divider_height">1dp</dimen>
+
+    <!--DEFAULT LIST-->
+    <dimen name="default_list_title_size">18sp</dimen>
+    <dimen name="default_list_subtitle_size">15sp</dimen>
+    <dimen name="default_list_temperature_size">55sp</dimen>
+
+
+    <dimen name="default_list_content_left_margin">80dp</dimen>
+    <dimen name="default_list_left_margin">96dp</dimen>
+
+
+
+    <!--FRAGMENT LOCATION LIST-->
+    <dimen name="fragment_location_list_add_button_bottom_margin">24dp</dimen>
+
+    <!--FRAGMENT TODAY-->
+    <dimen name="fragment_today_location_text">18sp</dimen>
+    <dimen name="fragment_today_city_and_country">25sp</dimen>
+    <dimen name="fragment_today_information">15sp</dimen>
+    <dimen name="fragment_today_default_margin_top">24dp</dimen>
+    <dimen name="fragment_today_weather_img_dimen">100dp</dimen>
+    <dimen name="fragment_today_siblings_margin_top">12dp</dimen>
+    <dimen name="fragment_today_information_container_padding">32dp</dimen>
+    <dimen name="fragment_today_information_drawable_padding">5dp</dimen>
+    <dimen name="fragment_today_current_drawable_padding">5dp</dimen>
+
+    <dimen name="fragment_today_button_drawable_padding">8dp</dimen>
+
+    <!--FRAGMENT SETTINGS-->
+    <dimen name="fragment_settings_left_margin_divider">24dp</dimen>
+    <dimen name="fragment_location_list_drawable_padding">5dp</dimen>
+
+
+</resources>

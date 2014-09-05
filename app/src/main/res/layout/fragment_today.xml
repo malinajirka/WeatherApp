@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+
+    <ScrollView
+        android:id="@+id/container"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/weather_img"
+                android:layout_width="@dimen/fragment_today_weather_img_dimen"
+                android:layout_height="@dimen/fragment_today_weather_img_dimen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/fragment_today_default_margin_top"
+                android:src="@drawable/ic_sun"/>
+
+
+            <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                android:id="@+id/city_and_country"
+                android:drawableLeft="@drawable/ic_current"
+                android:drawablePadding="@dimen/fragment_today_current_drawable_padding"
+                style="@style/WeatherApp.TextView.Semibold.TodayCityAndCountry"
+                android:layout_below="@+id/weather_img"/>
+
+            <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                android:id="@+id/temperature"
+                style="@style/WeatherApp.TextView.Regular.TodayTemperature"
+                android:layout_below="@+id/city_and_country"/>
+
+            <ImageView
+                android:id="@+id/today_divider_1"
+                style="@style/WeatherApp.TodayDivider"
+                android:layout_below="@+id/temperature"/>
+
+            <LinearLayout
+                android:id="@+id/information_first_layout"
+
+                style="@style/WeatherApp.TodayInformationContainer"
+                android:layout_below="@id/today_divider_1">
+
+                <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                    android:id="@+id/precipitation"
+                    style="@style/WeatherApp.TextView.Semibold.TodayInformation"
+                    android:drawableTop="@drawable/ic_rain"
+                    android:text="0"/>
+
+
+                <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                    android:id="@+id/humidity"
+                    style="@style/WeatherApp.TextView.Semibold.TodayInformation"
+                    android:drawableTop="@drawable/ic_humidity"
+
+                    android:text="s"/>
+
+                <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                    android:id="@+id/pressure"
+                    style="@style/WeatherApp.TextView.Semibold.TodayInformation"
+                    android:drawableTop="@drawable/ic_preassure"
+                    android:text="s"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/information_second_layout"
+                style="@style/WeatherApp.TodayInformationContainer"
+                android:layout_below="@id/information_first_layout"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                    android:id="@+id/wind"
+                    style="@style/WeatherApp.TextView.Semibold.TodayInformation"
+                    android:drawableTop="@drawable/ic_wind"
+                    android:text="s"/>
+
+
+                <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
+                    android:id="@+id/compass"
+                    style="@style/WeatherApp.TextView.Semibold.TodayInformation"
+                    android:drawableTop="@drawable/ic_compass"
+                    android:text="s"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/today_divider_2"
+                style="@style/WeatherApp.TodayDivider"
+                android:layout_below="@+id/information_second_layout"
+                />
+
+
+            <cz.malinajiri.showcase.weatherapp.view.ProximaNovaButton
+                android:id="@+id/btn_share"
+                style="@style/WeatherApp.TodayShareButton"
+                android:layout_below="@id/today_divider_2"
+                android:layout_marginBottom="@dimen/global_widget_horizontal_margin"
+                android:drawableLeft="@drawable/ic_share"
+                android:text="@string/global_share"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

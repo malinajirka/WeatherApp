@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- different for various screen sizes -->
+    <style name="WeatherApp.Theme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/WeatherApp.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/up_nav</item>
+        <item name="android:logo">@drawable/ic_logo</item>
+        <!--Removes the shadow below the action bar-->
+        <item name="android:windowContentOverlay">@null</item>
+        <!--Disables transition animation when switching activities-->
+        <item name="android:windowAnimationStyle">@null</item>
+
+
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LANGUAGE INDEPENDENT -->
+    <string name="pref_key_speed_unit">speed_unit</string>
+    <string name="pref_key_temp_unit">temp_unit</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+       android:insetLeft="@dimen/default_list_left_margin">
+
+    <shape>
+
+        <size android:height="1dip"/>
+
+        <solid android:color="@color/global_divider_default_list"/>
+
+    </shape>
+
+</inset>

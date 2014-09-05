@@ -1,0 +1,119 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- different for various screen sizes -->
+    <style name="WeatherApp.Theme" parent="Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/WeatherApp.ActionBar</item>
+        <item name="homeAsUpIndicator">@drawable/up_nav</item>
+        <!--Disables transition animation when switching activities-->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+
+    <!-- ActionBar styles -->
+    <style name="WeatherApp.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/ab_background</item>
+    </style>
+
+
+    <style name="WeatherApp"></style>
+
+    <style name="WeatherApp.TextView" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/global_default_text_color</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Semibold">
+        <item name="fontName">proximanova_semibold.otf</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Regular">
+        <item name="fontName">proximanova_regular.otf</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Light">
+        <item name="fontName">proximanova_light.ttf</item>
+    </style>
+
+
+    <style name="WeatherApp.TextView.Semibold.DrawerItem">
+        <item name="android:textSize">@dimen/drawer_text_size</item>
+        <item name="android:textColor">@drawable/selector_drawer_textview</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Semibold.LocationTitle">
+        <item name="android:textSize">@dimen/default_list_title_size</item>
+    </style>
+
+
+    <style name="WeatherApp.TextView.Regular.LocationSubtitle">
+        <item name="android:textSize">@dimen/default_list_subtitle_size</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Light.LocationTemperature">
+        <item name="android:textSize">@dimen/default_list_temperature_size</item>
+        <item name="android:textColor">@color/global_default_list_temperature</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Semibold.TodayCityAndCountry">
+        <item name="android:textSize">@dimen/fragment_today_location_text</item>
+        <item name="android:textColor">@color/global_default_text_color</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/fragment_today_default_margin_top</item>
+
+    </style>
+
+    <style name="WeatherApp.TextView.Regular.TodayTemperature">
+        <item name="android:textSize">@dimen/fragment_today_city_and_country</item>
+        <item name="android:textColor">@color/fragment_today_temperature_text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/fragment_today_siblings_margin_top</item>
+
+    </style>
+
+    <style name="WeatherApp.TextView.Semibold.TodayInformation">
+        <item name="android:textSize">@dimen/fragment_today_information</item>
+        <item name="android:textColor">@color/global_default_text_color</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/fragment_today_information_drawable_padding</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="WeatherApp.TodayDivider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/fragment_today_default_margin_top</item>
+        <item name="android:src">@drawable/today_divider</item>
+    </style>
+
+    <style name="WeatherApp.TodayInformationContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/fragment_today_default_margin_top</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingLeft">@dimen/fragment_today_information_container_padding</item>
+        <item name="android:paddingRight">@dimen/fragment_today_information_container_padding</item>
+
+    </style>
+
+    <style name="WeatherApp.TodayShareButton" parent="android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/fragment_today_default_margin_top</item>
+        <item name="android:background">@drawable/selector_transparent_button</item>
+        <item name="fontName">proximanova_semibold.otf</item>
+        <item name="android:paddingLeft">@dimen/global_default_button_padding</item>
+        <item name="android:paddingRight">@dimen/global_default_button_padding</item>
+        <item name="android:drawablePadding">@dimen/fragment_today_button_drawable_padding</item>
+        <item name="android:textColor">@color/fragment_today_share_orange</item>
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+    <ListPreference
+        android:dialogTitle="@string/pref_speed_unit_list"
+        android:key="@string/pref_key_speed_unit"
+        android:summary="@string/pref_speed_unit_kmh"
+        android:title="@string/pref_speed_unit_list"
+        android:entries="@array/pref_speed_unit_entries"
+        android:entryValues="@array/pref_speed_unit_entries"
+        android:defaultValue="@string/pref_speed_unit_kmh"/>
+
+
+    <ListPreference
+        android:dialogTitle="@string/pref_temp_unit_list"
+        android:key="@string/pref_key_temp_unit"
+        android:summary="@string/pref_temp_unit_celsius"
+        android:title="@string/pref_temp_unit_list"
+        android:entries="@array/pref_temp_unit_entries"
+        android:entryValues="@array/pref_temp_unit_entries"
+        android:defaultValue="@string/pref_temp_unit_celsius"/>
+
+
+</PreferenceScreen>
