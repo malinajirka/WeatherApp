@@ -4,7 +4,7 @@
 
     >
 
-    <ListPreference
+    <cz.malinajiri.showcase.weatherapp.view.CustomListPreference
         android:dialogTitle="@string/pref_speed_unit_list"
         android:key="@string/pref_key_speed_unit"
         android:summary="@string/pref_speed_unit_kmh"
@@ -14,7 +14,7 @@
         android:defaultValue="@string/pref_speed_unit_kmh"/>
 
 
-    <ListPreference
+    <cz.malinajiri.showcase.weatherapp.view.CustomListPreference
         android:dialogTitle="@string/pref_temp_unit_list"
         android:key="@string/pref_key_temp_unit"
         android:summary="@string/pref_temp_unit_celsius"

@@ -115,5 +115,14 @@
 
     </style>
 
+    <style name="WeatherApp.TextView.Semibold.PreferenceTitle">
+        <item name="android:textColor">@color/global_default_text_color</item>
+        <item name="android:textSize">@dimen/preference_text_size_title</item>
+    </style>
+
+    <style name="WeatherApp.TextView.Regular.PreferenceSummary">
+        <item name="android:textSize">@dimen/preference_text_size</item>
+    </style>
+
 
 </resources>
