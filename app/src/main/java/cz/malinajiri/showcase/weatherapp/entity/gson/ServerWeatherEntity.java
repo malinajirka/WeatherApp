@@ -33,7 +33,7 @@ public class ServerWeatherEntity {
         sys = new Country("");
         main = new WeatherMain(273.15f,0,0);
         wind = new Wind(0,0);
-        clouds = new Cloud(0);
+        clouds = new Cloud(999);
         weather = new ArrayList<Weather>();
         weather.add(new Weather(""));
     }

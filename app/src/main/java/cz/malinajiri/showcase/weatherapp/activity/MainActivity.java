@@ -11,6 +11,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.crittercism.app.Crittercism;
+
 import cz.malinajiri.showcase.weatherapp.R;
 import cz.malinajiri.showcase.weatherapp.fragment.ForecastFragment;
 import cz.malinajiri.showcase.weatherapp.fragment.NavigationDrawerFragment;
@@ -48,6 +50,7 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Crittercism.initialize(getApplicationContext(), getString(R.string.crittercism));
         setContentView(R.layout.activity_main);
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -58,6 +61,7 @@ public class MainActivity extends ActionBarActivity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
     }
 
 
@@ -91,6 +95,7 @@ public class MainActivity extends ActionBarActivity
         trans.replace(R.id.container, fragment)
                 .commit();
     }
+
 
 
     public void onSectionAttached(int number) {

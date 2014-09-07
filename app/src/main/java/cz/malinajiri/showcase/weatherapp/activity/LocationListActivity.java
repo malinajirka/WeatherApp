@@ -5,6 +5,8 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
+import com.crittercism.app.Crittercism;
+
 import cz.malinajiri.showcase.weatherapp.R;
 
 
@@ -14,6 +16,7 @@ public class LocationListActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Crittercism.initialize(getApplicationContext(), getString(R.string.crittercism));
         setContentView(R.layout.activity_location_list);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
