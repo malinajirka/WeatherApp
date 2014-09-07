@@ -17,7 +17,7 @@ import cz.malinajiri.showcase.weatherapp.R;
 import cz.malinajiri.showcase.weatherapp.activity.MainActivity;
 
 
-public class SettingsFragment extends PreferenceFragment  implements SharedPreferences.OnSharedPreferenceChangeListener{
+public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     public static SettingsFragment newInstance(int section) {
         SettingsFragment fragment = new SettingsFragment();
@@ -44,10 +44,9 @@ public class SettingsFragment extends PreferenceFragment  implements SharedPrefe
     }
 
 
-
     @Override
     public View onCreateView(LayoutInflater paramLayoutInflater, ViewGroup paramViewGroup, Bundle paramBundle) {
-        View view =  super.onCreateView(paramLayoutInflater, paramViewGroup, paramBundle);
+        View view = super.onCreateView(paramLayoutInflater, paramViewGroup, paramBundle);
         ListView list = (ListView) view.findViewById(android.R.id.list);
         list.findViewById(android.R.id.list).setBackgroundColor(Color.WHITE);
         return view;
@@ -61,11 +60,11 @@ public class SettingsFragment extends PreferenceFragment  implements SharedPrefe
 
     }
 
+
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        updatePreferenceSummary(sharedPreferences,key);
+        updatePreferenceSummary(sharedPreferences, key);
     }
-
 
 
     @Override
@@ -74,6 +73,7 @@ public class SettingsFragment extends PreferenceFragment  implements SharedPrefe
         getPreferenceScreen().getSharedPreferences()
                 .registerOnSharedPreferenceChangeListener(this);
     }
+
 
     @Override
     public void onPause() {
@@ -85,15 +85,18 @@ public class SettingsFragment extends PreferenceFragment  implements SharedPrefe
 
     private void renderView() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
-        updatePreferenceSummary(sharedPreferences,getString(R.string.pref_key_speed_unit));
-        updatePreferenceSummary(sharedPreferences,getString(R.string.pref_key_temp_unit));
+        updatePreferenceSummary(sharedPreferences, getString(R.string.pref_key_speed_unit));
+        updatePreferenceSummary(sharedPreferences, getString(R.string.pref_key_temp_unit));
     }
 
-    private void updatePreferenceSummary(SharedPreferences sharedPreferences,String key) {
-        Preference connectionPref = findPreference(key);
-        String summary = sharedPreferences.getString(key, "");
-        if(!TextUtils.isEmpty(summary)) {
-            connectionPref.setSummary(summary);
+
+    private void updatePreferenceSummary(SharedPreferences sharedPreferences, String key) {
+        if (key.equals(getString(R.string.pref_key_speed_unit)) || key.equals(getString(R.string.pref_key_temp_unit))) {
+            Preference connectionPref = findPreference(key);
+            String summary = sharedPreferences.getString(key, "");
+            if (!TextUtils.isEmpty(summary)) {
+                connectionPref.setSummary(summary);
+            }
         }
     }
 }
