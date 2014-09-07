@@ -126,7 +126,7 @@ public class TodayFragment extends Fragment implements OnListDialogItemClickedLi
 
 
 
-        parent.findViewById(R.id.progress).setVisibility(View.GONE);
+        parent.findViewById(android.R.id.empty).setVisibility(View.GONE);
         parent.findViewById(R.id.container).setVisibility(View.VISIBLE);
 
     }

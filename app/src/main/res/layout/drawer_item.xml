@@ -17,7 +17,6 @@
 
     <cz.malinajiri.showcase.weatherapp.view.ProximaNovaTextView
         android:id="@+id/section_title"
-        android:paddingLeft="@dimen/global_widget_horizontal_margin"
         style="@style/WeatherApp.TextView.Semibold.DrawerItem"
         />
 </LinearLayout>

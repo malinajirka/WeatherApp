@@ -8,7 +8,6 @@
 
     <ListView
         android:id="@android:id/list"
-        xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/WeatherApp.ListView"/>
 
 

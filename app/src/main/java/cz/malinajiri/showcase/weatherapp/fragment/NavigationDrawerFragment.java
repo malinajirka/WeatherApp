@@ -217,7 +217,7 @@ public class NavigationDrawerFragment extends Fragment {
                 public void run() {
                     mDrawerLayout.closeDrawer(mFragmentContainerView);
                 }
-            }, 200);
+            }, 300);
         }
         if (mCallbacks != null) {
             mCallbacks.onNavigationDrawerItemSelected(position);

@@ -21,6 +21,7 @@
     <style name="WeatherApp.Drawer"></style>
 
     <style name="WeatherApp.TextView.Semibold.DrawerItem">
+
         <item name="android:textSize">@dimen/drawer_text_size</item>
         <item name="android:textColor">@drawable/selector_drawer_textview</item>
         <item name="android:paddingLeft">@dimen/global_widget_horizontal_margin</item>
