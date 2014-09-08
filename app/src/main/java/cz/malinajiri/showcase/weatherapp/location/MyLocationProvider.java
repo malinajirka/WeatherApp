@@ -59,6 +59,7 @@ public class MyLocationProvider implements GooglePlayServicesClient.ConnectionCa
     public void registerLocationListener(OnLocationChangedListener listener, Context ctx) throws LocationNotFoundException {
         if (isLocationRequestNeeded(location)) {
             subscribers.add(listener);
+            waitingForLocation = true;
             try {
                 requestNewLocationUpdate(ctx);
             } catch (LocationNotFoundException e) {
@@ -76,7 +77,7 @@ public class MyLocationProvider implements GooglePlayServicesClient.ConnectionCa
             } else {
                 unavailableLocationSource = 0;
             }
-            waitingForLocation = true;
+
         } else {
             listener.locationUpdated(location);
         }
